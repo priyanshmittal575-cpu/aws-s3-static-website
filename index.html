@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteClub | Campus Open-Source Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">Byte<span>Club</span></a>
+      <div class="nav-right">
+        <a href="#tracks">Tracks</a>
+        <a href="#faq">FAQ</a>
+        <button id="themeBtn" class="theme-btn" title="Toggle Theme">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Student Developer Community • Est. 2026</span>
+        <h1>Build Real Software.<br />Ship Your First Open-Source Repo.</h1>
+        <p>
+          A peer-led coding community for 1st-year B.Tech students learning web engineering, Linux fundamentals, and collaborative Git workflows.
+        </p>
+        <div class="actions">
+          <a href="#tracks" class="btn primary">Explore Learning Tracks</a>
+          <button id="versionBtn" class="btn ghost">View Site Changelog (v1.2)</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" class="section">
+      <div class="container">
+        <h2>Core Tracks</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>01. Frontend Foundations</h3>
+            <p>Semantic HTML5, responsive CSS Grid/Flexbox layouts, and clean DOM manipulation without heavy frameworks.</p>
+          </div>
+          <div class="card">
+            <h3>02. Git & GitHub Workflow</h3>
+            <p>Branching, pull requests, resolving merge conflicts, and writing clear technical README documentation.</p>
+          </div>
+          <div class="card">
+            <h3>03. Backend & APIs</h3>
+            <p>Understanding HTTP request/response cycles, REST endpoints, JSON payloads, and server-side validation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq-box">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <button class="faq-q">Do I need prior coding experience to join? <span>+</span></button>
+          <div class="faq-a">Not at all. Most members start in their first semester alongside their introductory C programming course.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How are weekly coding sprints organized? <span>+</span></button>
+          <div class="faq-a">Every Saturday we pick a small practical problem statement, build it in pairs, and push the code to GitHub by Sunday evening.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Where can I access workshop slides and starter code? <span>+</span></button>
+          <div class="faq-a">All session repositories and notes are published openly under our GitHub organization after every meetup.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Changelog Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Release Notes</h3>
+        <button id="closeModal">✕</button>
+      </div>
+      <ul>
+        <li><strong>v1.2:</strong> Added Dark Mode persistence via localStorage and interactive FAQ accordion.</li>
+        <li><strong>v1.1:</strong> Improved mobile responsiveness for track cards.</li>
+        <li><strong>v1.0:</strong> Initial static site release pushed to GitHub.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 ByteClub Student Chapter • Built with Vanilla HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
